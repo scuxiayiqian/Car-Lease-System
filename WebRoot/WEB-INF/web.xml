@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="gb2312"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>scu.sw.user.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddUserServlet</servlet-name>
+  	<url-pattern>/AddUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteOneUserFromJspServlet</servlet-name>
+    <servlet-class>scu.sw.user.DeleteOneUserFromJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteOneUserFromJspServlet</servlet-name>
+  	<url-pattern>/DeleteOneUserFromJspServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateOneUserFromJspServlet</servlet-name>
+    <servlet-class>scu.sw.user.UpdateOneUserFromJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateOneUserFromJspServlet</servlet-name>
+  	<url-pattern>/UpdateOneUserFromJspServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowOneUserServlet</servlet-name>
+    <servlet-class>scu.sw.user.ShowOneUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowOneUserServlet</servlet-name>
+  	<url-pattern>/ShowOneUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateOneUserServlet</servlet-name>
+    <servlet-class>scu.sw.user.UpdateOneUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateOneUserServlet</servlet-name>
+  	<url-pattern>/UpdateOneUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteOneUserServlet</servlet-name>
+    <servlet-class>scu.sw.user.DeleteOneUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteOneUserServlet</servlet-name>
+  	<url-pattern>/DeleteOneUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowUsersServlet</servlet-name>
+    <servlet-class>scu.sw.user.ShowUsersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowUsersServlet</servlet-name>
+  	<url-pattern>/ShowUsersServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddCustomersServlet</servlet-name>
+    <servlet-class>scu.sw.customers.AddCustomersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddCustomersServlet</servlet-name>
+  	<url-pattern>/AddCustomersServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteOneCustomerServlet</servlet-name>
+    <servlet-class>scu.sw.customers.DeleteOneCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteOneCustomerServlet</servlet-name>
+  	<url-pattern>/DeleteOneCustomerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteOneCustomerFromJspServlet</servlet-name>
+    <servlet-class>scu.sw.customers.DeleteOneCustomerFromJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteOneCustomerFromJspServlet</servlet-name>
+  	<url-pattern>/DeleteOneCustomerFromJspServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowOneCustomerServlet</servlet-name>
+    <servlet-class>scu.sw.customers.ShowOneCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowOneCustomerServlet</servlet-name>
+  	<url-pattern>/ShowOneCustomerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateOneCustomerServlet</servlet-name>
+    <servlet-class>scu.sw.customers.UpdateOneCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateOneCustomerServlet</servlet-name>
+  	<url-pattern>/UpdateOneCustomerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateOneCustomerFromJspServlet</servlet-name>
+    <servlet-class>scu.sw.customers.UpdateOneCustomerFromJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateOneCustomerFromJspServlet</servlet-name>
+  	<url-pattern>/UpdateOneCustomerFromJspServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowAllCustomerServlet</servlet-name>
+    <servlet-class>scu.sw.customers.ShowAllCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowAllCustomerServlet</servlet-name>
+  	<url-pattern>/ShowAllCustomerServlet</url-pattern>
+  </servlet-mapping>
+
+
+	<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddCarServlet</servlet-name>
+    <servlet-class>scu.sw.car.AddCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddCarServlet</servlet-name>
+  	<url-pattern>/AddCarServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteOneCarServlet</servlet-name>
+    <servlet-class>scu.sw.car.DeleteOneCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteOneCarServlet</servlet-name>
+  	<url-pattern>/DeleteOneCarServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteOneCarFromJspServlet</servlet-name>
+    <servlet-class>scu.sw.car.DeleteOneCarFromJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteOneCarFromJspServlet</servlet-name>
+  	<url-pattern>/DeleteOneCarFromJspServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowOneCarServlet</servlet-name>
+    <servlet-class>scu.sw.car.ShowOneCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowOneCarServlet</servlet-name>
+  	<url-pattern>/ShowOneCarServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateOneCarServlet</servlet-name>
+    <servlet-class>scu.sw.car.UpdateOneCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateOneCarServlet</servlet-name>
+  	<url-pattern>/UpdateOneCarServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateOneCarFromJspServlet</servlet-name>
+    <servlet-class>scu.sw.car.UpdateOneCarFromJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateOneCarFromJspServlet</servlet-name>
+  	<url-pattern>/UpdateOneCarFromJspServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowCarsServlet</servlet-name>
+    <servlet-class>scu.sw.car.ShowCarsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowCarsServlet</servlet-name>
+  	<url-pattern>/ShowCarsServlet</url-pattern>
+  </servlet-mapping>
+ 
+ 
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchCustomerServlet</servlet-name>
+    <servlet-class>scu.sw.customers.SearchCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SearchCustomerServlet</servlet-name>
+  	<url-pattern>/SearchCustomerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RentCarServlet</servlet-name>
+    <servlet-class>scu.sw.business.RentCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RentCarServlet</servlet-name>
+  	<url-pattern>/RentCarServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchCustomerIdentityServlet</servlet-name>
+    <servlet-class>scu.sw.customers.SearchCustomerIdentityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SearchCustomerIdentityServlet</servlet-name>
+  	<url-pattern>/SearchCustomerIdentityServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReturnCarServlet</servlet-name>
+    <servlet-class>scu.sw.business.ReturnCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ReturnCarServlet</servlet-name>
+  	<url-pattern>/ReturnCarServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowRentTableServlet2</servlet-name>
+    <servlet-class>scu.sw.business.ShowRentTableServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowRentTableServlet2</servlet-name>
+  	<url-pattern>/ShowRentTableServlet2</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchReturnWithinOneMonthServlet</servlet-name>
+    <servlet-class>scu.sw.business.SearchReturnWithinOneMonthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SearchReturnWithinOneMonthServlet</servlet-name>
+  	<url-pattern>/SearchReturnWithinOneMonthServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowAllRentRecordServlet</servlet-name>
+    <servlet-class>scu.sw.business.ShowAllRentRecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowAllRentRecordServlet</servlet-name>
+  	<url-pattern>/ShowAllRentRecordServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteRentTableServlet</servlet-name>
+    <servlet-class>scu.sw.business.DeleteRentTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteRentTableServlet</servlet-name>
+  	<url-pattern>/DeleteRentTableServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteRentTableFromJspServlet</servlet-name>
+    <servlet-class>scu.sw.business.DeleteRentTableFromJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteRentTableFromJspServlet</servlet-name>
+  	<url-pattern>/DeleteRentTableFromJspServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateRentTableServlet</servlet-name>
+    <servlet-class>scu.sw.business.UpdateRentTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateRentTableServlet</servlet-name>
+  	<url-pattern>/UpdateRentTableServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowRentTableServlet</servlet-name>
+    <servlet-class>scu.sw.business.ShowRentTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowRentTableServlet</servlet-name>
+  	<url-pattern>/ShowRentTableServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateRentTableFromJspServlet</servlet-name>
+    <servlet-class>scu.sw.business.UpdateRentTableFromJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateRentTableFromJspServlet</servlet-name>
+  	<url-pattern>/UpdateRentTableFromJspServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddCheckRecordFromJspServlet</servlet-name>
+    <servlet-class>scu.sw.checktable.AddCheckRecordFromJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddCheckRecordFromJspServlet</servlet-name>
+  	<url-pattern>/AddCheckRecordFromJspServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddCheckRecordServlet</servlet-name>
+    <servlet-class>scu.sw.checktable.AddCheckRecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddCheckRecordServlet</servlet-name>
+  	<url-pattern>/AddCheckRecordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowAllCheckRecordServlet</servlet-name>
+    <servlet-class>scu.sw.checktable.ShowAllCheckRecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowAllCheckRecordServlet</servlet-name>
+  	<url-pattern>/ShowAllCheckRecordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowOneCheckRecordServlet</servlet-name>
+    <servlet-class>scu.sw.checktable.ShowOneCheckRecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowOneCheckRecordServlet</servlet-name>
+  	<url-pattern>/ShowOneCheckRecordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AllreadyCheckOneRecordServlet</servlet-name>
+    <servlet-class>scu.sw.checktable.AllreadyCheckOneRecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AllreadyCheckOneRecordServlet</servlet-name>
+  	<url-pattern>/AllreadyCheckOneRecordServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

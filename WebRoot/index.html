@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>牵君GO汽车租赁系统</title>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="css/fullcalendar.css" />	
+		<link rel="stylesheet" href="css/unicorn.main.css" />
+		<link rel="stylesheet" href="css/unicorn.grey.css" class="skin-color" />
+	    <link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+	    <link href="/assets/application-c378a238ede22e5e595f45d12363b909.css" media="all" rel="stylesheet" type="text/css" />
+	    <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
+	    <script src="/assets/application-e812694a9f89b2a8c4f2318ae988950c.js" type="text/javascript"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<body>
+		
+		
+		<div id="header">
+			<h1><a href="./dashboard.html">Unicorn Admin</a></h1>		
+		</div>
+		
+		<div id="search">
+			<input type="text" placeholder="Search here..." /><button type="submit" class="tip-right" title="Search"><i class="icon-search icon-white"></i></button>
+		</div>
+		<div id="user-nav" class="navbar navbar-inverse">
+            <ul class="nav btn-group">
+                <li class="btn btn-inverse"><a title="" href="#"><i class="icon icon-user"></i> <span class="text">我</span></a></li>
+                <li class="btn btn-inverse dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">新消息</span> <span class="label label-important">5</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="sAdd" title="" href="#">新消息</a></li>
+                        <li><a class="sInbox" title="" href="#">收件箱</a></li>
+                        <li><a class="sOutbox" title="" href="#">发件箱</a></li>
+                        <li><a class="sTrash" title="" href="#">垃圾箱</a></li>
+                    </ul>
+                </li>
+                <li class="btn btn-inverse"><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">设置</span></a></li>
+                <li class="btn btn-inverse"><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">退出系统</span></a></li>
+            </ul>
+        </div>
+            
+		<div id="sidebar">
+			<a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+			<ul>
+				<li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>首页</span></a></li>
+				<li class="submenu">
+					<a href="addUser.jsp"><i class="icon icon-th-list"></i> <span>用户管理</span> <span class="label">2</span></a>
+					<ul>
+						<li><a href="addUser.jsp">添加用户</a></li>
+						<li><a href="ShowUsersServlet">查询用户</a></li>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a href="addCustomer.jsp"><i class="icon icon-th-list"></i> <span>客户管理</span> <span class="label">2</span></a>
+					<ul>
+						<li><a href="addCustomer.jsp">添加客户信息</a></li>
+						<li><a href="ShowAllCustomerServlet">查询客户信息</a></li>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a href="addCar.jsp"><i class="icon icon-th-list"></i> <span>汽车管理</span> <span class="label">2</span></a>
+					<ul>
+						<li><a href="addCar.jsp">添加汽车信息</a></li>
+						<li><a href="ShowCarsServlet">查询汽车信息</a></li>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a href="#"><i class="icon icon-th-list"></i> <span>业务管理</span> <span class="label">4</span></a>
+					<ul>
+						<li><a href="business_carRent_inputIdNum.jsp">汽车出租</a></li>
+						<li><a href="business_carReturn_inputIdNum.jsp">汽车入库</a></li>
+						<li><a href="ShowAllRentRecordServlet">出租单管理</a></li>
+						<li><a href="ShowAllCheckRecordServlet">检查单管理</a></li>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a href="#"><i class="icon icon-th-list"></i> <span>业务统计</span> <span class="label">1</span></a>
+					<ul>
+						<li><a href="SearchReturnWithinOneMonthServlet">当月应还汽车</a></li>
+					</ul>
+				</li>
+				
+				<!-- 
+				<li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
+				<li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Interface elements</span></a></li>
+				<li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
+				<li><a href="grid.html"><i class="icon icon-th-list"></i> <span>Grid Layout</span></a></li>
+				<li class="submenu">
+					<a href="#"><i class="icon icon-file"></i> <span>Sample pages</span> <span class="label">4</span></a>
+					<ul>
+						<li><a href="invoice.html">Invoice</a></li>
+						<li><a href="chat.html">Support chat</a></li>
+						<li><a href="calendar.html">Calendar</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a>
+				</li>
+				<li>
+					<a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a>
+				</li>
+				 -->
+			</ul>
+		
+		</div>
+		
+		
+		<div id="content">
+			<div id="content-header">
+				<h1>Take ride with me !</h1>
+				<!--  
+				<div class="btn-group">
+					<a class="btn btn-large tip-bottom" title="Manage Files"><i class="icon-file"></i></a>
+					<a class="btn btn-large tip-bottom" title="Manage Users"><i class="icon-user"></i></a>
+					<a class="btn btn-large tip-bottom" title="Manage Comments"><i class="icon-comment"></i><span class="label label-important">5</span></a>
+					<a class="btn btn-large tip-bottom" title="Manage Orders"><i class="icon-shopping-cart"></i></a>
+				</div>
+				-->
+			</div>
+			<!-- 
+			<div id="breadcrumb">
+				<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+			</div>
+			
+			 -->
+	
+			
+			
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="carousel slide" id="carousel-165027">
+				<ol class="carousel-indicators">
+					
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="" src="img/car1.jpg" />
+						<!--  
+						<div class="carousel-caption">
+							<h4>
+								棒球
+							</h4>
+							<p>
+								棒球运动是一种以棒打球为主要特点，集体性、对抗性很强的球类运动项目，在美国、日本尤为盛行。
+							</p>
+						</div>
+						-->
+					</div>
+					<div class="item">
+						<img alt="" src="img/car2.jpg" />
+						<!--  
+						<div class="carousel-caption">
+							<h4>
+								冲浪
+							</h4>
+							<p>
+								冲浪是以海浪为动力，利用自身的高超技巧和平衡能力，搏击海浪的一项运动。运动员站立在冲浪板上，或利用腹板、跪板、充气的橡皮垫、划艇、皮艇等驾驭海浪的一项水上运动。
+							</p>
+						</div>
+						-->
+					</div>
+					<div class="item">
+						<img alt="" src="img/car3.jpg" />
+						<!--  
+						<div class="carousel-caption">
+							<h4>
+								自行车
+							</h4>
+							<p>
+								以自行车为工具比赛骑行速度的体育运动。1896年第一届奥林匹克运动会上被列为正式比赛项目。环法赛为最著名的世界自行车锦标赛。
+							</p>
+						</div>
+						-->
+					</div>
+				</div> <a data-slide="prev" href="#carousel-165027" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-165027" class="right carousel-control">›</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<div class="container-fluid">
+				<div class="row-fluid">
+					<div id="footer" class="span12">
+						2013 &copy; 牵君GO汽车租赁系统. 版权所有 <a href="https://www.google.com">四川大学软件学院谦珺小组</a>
+						<br/>
+						联系方式：<a href="https://www.gmail.com/‎">scuxiayiqian@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+
+            <script src="js/excanvas.min.js"></script>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/jquery.ui.custom.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.flot.min.js"></script>
+            <script src="js/jquery.flot.resize.min.js"></script>
+            <script src="js/jquery.peity.min.js"></script>
+            <script src="js/fullcalendar.min.js"></script>
+            <script src="js/unicorn.js"></script>
+            <script src="js/unicorn.dashboard.js"></script>
+	</body>
+</html>
